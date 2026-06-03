@@ -114,7 +114,7 @@ BEGIN
 			FIELDTERMINATOR=',',
 			TABLOCK
 		);
-		SET @start_time=GETDATE()
+		SET @end_time=GETDATE()
 		PRINT '>>LOAD DURATION :'+ CAST(DATEDIFF(second,@start_time,@end_time) AS NVARCHAR)+' seconds'
 		PRINt '---------------------------------------->'
 
@@ -131,7 +131,7 @@ BEGIN
 			FIELDTERMINATOR=',',
 			TABLOCK
 		);
-		SET @start_time=GETDATE()
+		SET @end_time=GETDATE()
 		PRINT '>>LOAD DURATION :'+ CAST(DATEDIFF(second,@start_time,@end_time) AS NVARCHAR)+' seconds'
 		PRINt '---------------------------------------->'
 		SET @batch_end_time=GETDATE();
